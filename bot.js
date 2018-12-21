@@ -49,7 +49,7 @@ client.on('ready', () => {
 
                                     .setDescription(args.join("  "))
 
-                                    .setColor(RANDOM)
+                                    .setColor("RANDOM")
 
                                 message.channel.sendEmbed(say);
 
