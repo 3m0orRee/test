@@ -34,7 +34,7 @@ client.on('ready', () => {
                             if (command == "embed") {
                                 if (!message.channel.guild) return message.reply('** This command only for servers **');
                                 let say = new Discord.RichEmbed()
-                                    .addField(#${message.author.discriminator}`)
+                                    .addField(`${message.author.discriminator}`)
                                     .setDescription(args.join("  "))
                                     .setColor(0x23b2d6)
                                 message.channel.sendEmbed(say);
